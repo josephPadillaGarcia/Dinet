@@ -1,7 +1,26 @@
-@import '_variables';
+@import 'variables';
 
+/* secciones */
+@import 'header';
 
 /*======================================*/
-h1{
-    color: $colortexto;
+header{
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+img{
+    display: block;
+}
+
+.text-white{
+    color: #ffffff !important;
+}
+
+/*
+    Section Banner Home
+*/
+#seccion_banner_home{
+    padding: 250px 50px 80px;
 }

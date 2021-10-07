@@ -5,9 +5,67 @@ COLORES
 /*
 Tamaño de letra
 */
+/* secciones */
+#content_header .navbar {
+  padding: 50px 0;
+}
+#content_header .navbar .logo_dinet {
+  left: 0;
+  top: 0;
+  padding: 30px 40px 30px 40px;
+  background-color: #ffffff !important;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.12);
+  border-bottom-right-radius: 85px;
+}
+#content_header .navbar .logo_dinet img {
+  width: 100%;
+  max-width: 95px;
+}
+#content_header .navbar .collapse .navbar-nav .nav-item {
+  display: grid;
+  align-content: center;
+  margin: 0 15px;
+}
+#content_header .navbar .collapse .navbar-nav .nav-item.boton {
+  border: 1px solid #F67706;
+  border-radius: 50px;
+  padding: 5px 30px;
+}
+#content_header .navbar .collapse .navbar-nav .nav-item.b_boton {
+  background-color: #F67706;
+}
+#content_header .navbar .collapse .navbar-nav .nav-item a {
+  color: #0D2355;
+  font-weight: bold;
+  font-size: 14px;
+}
+#content_header .navbar .collapse .navbar-nav .nav-item a.boton_buscar_header {
+  border: 1px solid #F67706;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
 /*======================================*/
-h1 {
-  color: red;
+header {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+/*
+    Section Banner Home
+*/
+#seccion_banner_home {
+  padding: 250px 50px 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

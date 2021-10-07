@@ -1,0 +1,45 @@
+#content_header{
+    .navbar{
+        padding: 50px 0;
+        .logo_dinet{
+            left: 0;
+            top: 0;
+            padding: 30px 40px 30px 40px;
+            background-color: #ffffff !important;
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.12);
+            border-bottom-right-radius: 85px;
+            img{
+                width: 100%;
+                max-width: 95px;
+            }
+        }
+        .collapse{
+            .navbar-nav{
+                .nav-item{
+                    display: grid;
+                    align-content: center;
+                    margin: 0 15px;                 
+                    &.boton{
+                        border: 1px solid $color_boton;
+                        border-radius: 50px;
+                        padding: 5px 30px;
+                    }
+                    &.b_boton{
+                        background-color: $color_boton;
+                    }
+                    a{
+                        color: $color_opciones_menu;
+                        font-weight: bold;
+                        font-size: 14px;
+                        &.boton_buscar_header{
+                            border: 1px solid $color_boton;
+                            border-radius: 50px;
+                            padding: 10px;
+                            background-color: #ffffff;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
