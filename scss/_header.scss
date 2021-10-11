@@ -20,19 +20,19 @@
                     align-content: center;
                     margin: 0 15px;                 
                     &.boton{
-                        border: 1px solid $color_boton;
+                        border: 1px solid $color_secundary;
                         border-radius: 50px;
                         padding: 5px 30px;
                     }
                     &.b_boton{
-                        background-color: $color_boton;
+                        background-color: $color_secundary;
                     }
                     a{
-                        color: $color_opciones_menu;
+                        color: $color_primary;
                         font-weight: bold;
                         font-size: 14px;
                         &.boton_buscar_header{
-                            border: 1px solid $color_boton;
+                            border: 1px solid $color_secundary;
                             border-radius: 50px;
                             padding: 10px;
                             background-color: #ffffff;

@@ -4,6 +4,11 @@
 @import 'header';
 
 /*======================================*/
+*{
+    font-family: $letraglobal !important;
+    color: $colortexto;
+}
+
 header{
     left: 0;
     top: 0;
@@ -18,9 +23,96 @@ img{
     color: #ffffff !important;
 }
 
+.bottom_section{
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+/*====================*/
+/* boton */
+.b_boton{
+    background-color: $color_secundary;
+}
+.btn_global{
+    padding: 12px 40px;
+    border-radius: 50px;
+}
+
+/*====================*/
+/* titulo general */
+.titulo{
+    color: $color_primary;
+    font-weight: bold !important;
+}
+
+/*====================*/
+/* Titulo Global */
+.titulo_global{
+    b{
+        display: block;
+        text-align: center;
+        color: $color_secundary;
+        font-size: 14px;
+    }
+    h2{
+        text-align: center;
+        font-weight: bold;
+        color: $color_primary;
+    }
+}
+
+/*========================================*/
 /*
     Section Banner Home
 */
 #seccion_banner_home{
     padding: 250px 50px 80px;
+    background-image: url('/public/img/banner_home.png');
+    background-size: cover;
+    background-position: top;
+    .content_banner{
+        p{
+            font-size: 16px;
+            color: $colortexto;
+        }
+        b{
+            color: $color_secundary;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content_input_search{            
+            input{
+                &.input_search{
+                    height: 64px !important;
+                    margin-top: 10px;
+                    border: none;
+                    border-radius: 50px;
+                    width: 100%;
+                    padding-left: 50px;
+                    font-size: 14px;
+                    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.12));
+                }
+            }
+            span{
+                top: 50%;
+                left: 20px;
+                transform: translate(0, -50%);
+            }
+            a{
+                text-decoration: none;
+                top: 50%;
+                right: 15px;
+                transform: translate(0, -50%);
+                font-size: 16px;
+            }
+        }
+        b, input{
+            display: block;
+        }
+    }
 }
+
+/*========================================*/
+/*
+    Section Slider soluciones
+*/
