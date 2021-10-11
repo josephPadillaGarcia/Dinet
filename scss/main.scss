@@ -23,6 +23,10 @@ img{
     color: #ffffff !important;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .bottom_section{
     padding-bottom: 40px;
     margin-bottom: 40px;
@@ -36,6 +40,14 @@ img{
 .btn_global{
     padding: 12px 40px;
     border-radius: 50px;
+}
+.btn_border{
+    border: 2px solid $color_secundary;
+}
+.btn_color_text{
+    text-decoration: none;
+    color: $color_secundary;
+    font-size: 15px;
 }
 
 /*====================*/
@@ -116,3 +128,65 @@ img{
 /*
     Section Slider soluciones
 */
+#seccion_slider_soluciones{
+    .carousel_saluciones{
+        .item{
+            background: #ffffff;
+            overflow: hidden;
+            margin: 20px;
+            border-radius: 10px;
+            filter: drop-shadow(0px 2px 10px rgba(13, 35, 85, 0.2));
+            .content_solucion{
+                padding: 50px 25px 35px 25px;
+                span{
+                    background: $color_secundary;
+                    padding: 15px;
+                    border-radius: 50%;
+                    top: -30px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+                b{
+                    color: $color_primary;
+                    font-size: 18px;
+                    font-weight: bold;
+                    display: block;
+                    padding-bottom: 8px;
+                }
+                p{
+                    font-size: 13px;
+                }
+                a{
+                    margin: auto;
+                    display: table;
+                    &:hover{
+                        color: $color_secundary;
+                    }
+                }
+            }
+        }
+        button{
+            &.owl-prev{
+                left: -30px;
+            }
+            &.owl-next{
+                right: -30px;
+            }
+            &.owl-prev, &.owl-next{                
+                position: absolute;
+                top: 80px;
+                span {
+                    font-size: 25px;
+                    border: 1px solid $color_primary;
+                    padding: 0 12px 5px;
+                    border-radius: 50%;
+                    color: $color_primary;
+                    &:hover{
+                        background: $color_primary;
+                        color: #ffffff !important;
+                    }
+                }
+            }
+        }
+    }
+}

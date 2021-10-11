@@ -69,6 +69,10 @@ img {
   color: #ffffff !important;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .bottom_section {
   padding-bottom: 40px;
   margin-bottom: 40px;
@@ -83,6 +87,16 @@ img {
 .btn_global {
   padding: 12px 40px;
   border-radius: 50px;
+}
+
+.btn_border {
+  border: 2px solid #F67706;
+}
+
+.btn_color_text {
+  text-decoration: none;
+  color: #F67706;
+  font-size: 15px;
 }
 
 /*====================*/
@@ -155,5 +169,61 @@ img {
 /*
     Section Slider soluciones
 */
+#seccion_slider_soluciones .carousel_saluciones .item {
+  background: #ffffff;
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 2px 10px rgba(13, 35, 85, 0.2));
+}
+#seccion_slider_soluciones .carousel_saluciones .item .content_solucion {
+  padding: 50px 25px 35px 25px;
+}
+#seccion_slider_soluciones .carousel_saluciones .item .content_solucion span {
+  background: #F67706;
+  padding: 15px;
+  border-radius: 50%;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#seccion_slider_soluciones .carousel_saluciones .item .content_solucion b {
+  color: #0D2355;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 8px;
+}
+#seccion_slider_soluciones .carousel_saluciones .item .content_solucion p {
+  font-size: 13px;
+}
+#seccion_slider_soluciones .carousel_saluciones .item .content_solucion a {
+  margin: auto;
+  display: table;
+}
+#seccion_slider_soluciones .carousel_saluciones .item .content_solucion a:hover {
+  color: #F67706;
+}
+#seccion_slider_soluciones .carousel_saluciones button.owl-prev {
+  left: -30px;
+}
+#seccion_slider_soluciones .carousel_saluciones button.owl-next {
+  right: -30px;
+}
+#seccion_slider_soluciones .carousel_saluciones button.owl-prev, #seccion_slider_soluciones .carousel_saluciones button.owl-next {
+  position: absolute;
+  top: 80px;
+}
+#seccion_slider_soluciones .carousel_saluciones button.owl-prev span, #seccion_slider_soluciones .carousel_saluciones button.owl-next span {
+  font-size: 25px;
+  border: 1px solid #0D2355;
+  padding: 0 12px 5px;
+  border-radius: 50%;
+  color: #0D2355;
+}
+#seccion_slider_soluciones .carousel_saluciones button.owl-prev span:hover, #seccion_slider_soluciones .carousel_saluciones button.owl-next span:hover {
+  background: #0D2355;
+  color: #ffffff !important;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,8 @@
     <title>Dinet</title>
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/owl.carousel.min.css">
+    <script type="text/javascript" src="public/js/jquery.min.js"></script>
 </head>
 
 <body> 
@@ -72,7 +74,7 @@
         </div>
     </section>
 
-    <section id="seccion_slider_soluciones">
+    <section id="seccion_slider_soluciones" class="bottom_section">
 
         <div class="container">
             <div class="row">
@@ -80,13 +82,120 @@
                     <b>Servicios</b>
                     <h2 class="display-6">Nuestras soluciones</h2>
                 </div>
+
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-theme carousel_saluciones position-relative">
+                        <div class="item">
+                            <img src="public/img/soluciones/img_solucion01.png" alt="">
+                            <div class="content_solucion position-relative">
+                                <span class="position-absolute icons-solucion">
+                                    <img src="public/img/soluciones/icons/milla.png" alt="">
+                                </span>
+                                <b class="text-center">Ultima Milla</b>
+                                <p class="text-center">Administre en forma integrada y eficiente toda su cadena de abastecimiento</p>
+                                <a class="btn_global btn_border text-center btn_color_text" href="#!">Conoce más</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="public/img/soluciones/img_solucion01.png" alt="">
+                            <div class="content_solucion position-relative">
+                                <span class="position-absolute icons-solucion">
+                                    <img src="public/img/soluciones/icons/fulfill.png" alt="">
+                                </span>
+                                <b class="text-center">Ultima Milla</b>
+                                <p class="text-center">Administre en forma integrada y eficiente toda su cadena de abastecimiento</p>
+                                <a class="btn_global btn_border text-center btn_color_text" href="#!">Conoce más</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="public/img/soluciones/img_solucion02.png" alt="">
+                            <div class="content_solucion position-relative">
+                                <span class="position-absolute icons-solucion">
+                                    <img src="public/img/soluciones/icons/express.png" alt="">
+                                </span>
+                                <b class="text-center">Ultima Milla</b>
+                                <p class="text-center">Administre en forma integrada y eficiente toda su cadena de abastecimiento</p>
+                                <a class="btn_global btn_border text-center btn_color_text" href="#!">Conoce más</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="public/img/soluciones/img_solucion01.png" alt="">
+                            <div class="content_solucion position-relative">
+                                <span class="position-absolute icons-solucion">
+                                    <img src="public/img/soluciones/icons/milla.png" alt="">
+                                </span>
+                                <b class="text-center">Ultima Milla</b>
+                                <p class="text-center">Administre en forma integrada y eficiente toda su cadena de abastecimiento</p>
+                                <a class="btn_global btn_border text-center btn_color_text" href="#!">Conoce más</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="public/img/soluciones/img_solucion02.png" alt="">
+                            <div class="content_solucion position-relative">
+                                <span class="position-absolute icons-solucion">
+                                    <img src="public/img/soluciones/icons/milla.png" alt="">
+                                </span>
+                                <b class="text-center">Ultima Milla</b>
+                                <p class="text-center">Administre en forma integrada y eficiente toda su cadena de abastecimiento</p>
+                                <a class="btn_global btn_border text-center btn_color_text" href="#!">Conoce más</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="public/img/soluciones/img-solucion.png" alt="">
+                            <div class="content_solucion position-relative">
+                                <span class="position-absolute icons-solucion">
+                                    <img src="public/img/soluciones/icons/milla.png" alt="">
+                                </span>
+                                <b class="text-center">Ultima Milla</b>
+                                <p class="text-center">Administre en forma integrada y eficiente toda su cadena de abastecimiento</p>
+                                <a class="btn_global btn_border text-center btn_color_text" href="#!">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </section>
 
+    <div class="owl-carousel owl-theme">
+        <div class="item"><h4>1</h4></div>
+        <div class="item"><h4>2</h4></div>
+        <div class="item"><h4>3</h4></div>
+        <div class="item"><h4>4</h4></div>
+        <div class="item"><h4>5</h4></div>
+        <div class="item"><h4>6</h4></div>
+        <div class="item"><h4>7</h4></div>
+        <div class="item"><h4>8</h4></div>
+        <div class="item"><h4>9</h4></div>
+        <div class="item"><h4>10</h4></div>
+        <div class="item"><h4>11</h4></div>
+        <div class="item"><h4>12</h4></div>
+    </div>
 
-    <script type="text" src="public/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="public/js/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            lazyLoad:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
 
 </body>
 
