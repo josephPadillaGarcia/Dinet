@@ -32,6 +32,14 @@ img{
     margin-bottom: 40px;
 }
 
+.grid{
+    display: grid;
+}
+
+.align-center{
+    align-items: center;
+}
+
 /*====================*/
 /* boton */
 .b_boton{
@@ -277,6 +285,49 @@ img{
             text-decoration: none;
             padding-left: 80px;
             padding-right: 80px;
+        }
+    }
+}
+
+/*========================================*/
+/*
+    Section Datos
+*/
+#section_datos{
+    background-image: url('/public/img/fondo_mapa.png');
+    background-color: #F4F4F4;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    .content_text_rastreo{
+        h3{
+            color: $color_primary;
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            b{
+                color: $color_secundary
+            }
+        }
+        .datos{
+            img{
+                padding-bottom: 20px;
+            }
+            b{
+                color: $color_secundary;
+                font-size: 40px;
+            }
+            p{
+                color: $color_primary;
+                font-size: 14px;
+                font-weight: bold;
+                margin: 0;
+                line-height: 15px;
+            }
+        }
+    }
+    .img_dato{
+        img{
+            width: 100%;
         }
     }
 }

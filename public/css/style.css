@@ -78,6 +78,14 @@ img {
   margin-bottom: 40px;
 }
 
+.grid {
+  display: grid;
+}
+
+.align-center {
+  align-items: center;
+}
+
 /*====================*/
 /* boton */
 .b_boton {
@@ -308,6 +316,43 @@ img {
   text-decoration: none;
   padding-left: 80px;
   padding-right: 80px;
+}
+
+/*========================================*/
+/*
+    Section Datos
+*/
+#section_datos {
+  background-image: url("/public/img/fondo_mapa.png");
+  background-color: #F4F4F4;
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+#section_datos .content_text_rastreo h3 {
+  color: #0D2355;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+#section_datos .content_text_rastreo h3 b {
+  color: #F67706;
+}
+#section_datos .content_text_rastreo .datos img {
+  padding-bottom: 20px;
+}
+#section_datos .content_text_rastreo .datos b {
+  color: #F67706;
+  font-size: 40px;
+}
+#section_datos .content_text_rastreo .datos p {
+  color: #0D2355;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 15px;
+}
+#section_datos .img_dato img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
