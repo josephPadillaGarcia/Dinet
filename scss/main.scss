@@ -3,6 +3,7 @@
 /* secciones */
 @import 'header';
 @import 'footer';
+@import 'nosotros';
 
 /*======================================*/
 *{
@@ -29,8 +30,8 @@ img{
 }
 
 .bottom_section{
-    padding-bottom: 40px;
-    margin-bottom: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .grid{
@@ -101,6 +102,7 @@ ul{
 .titulo{
     color: $color_primary;
     font-weight: bold !important;
+    font-size: 38px;
 }
 
 /*====================*/
@@ -116,7 +118,8 @@ ul{
         text-align: center;
         font-weight: bold;
         color: $color_primary;
-        font-size: 38px;
+        font-size: 38px;        
+        margin-bottom: 35px;
     }
 }
 
@@ -124,11 +127,13 @@ ul{
 /*
     Section Banner Home
 */
-#seccion_banner_home{
-    padding: 250px 50px 80px;
-    background-image: url('/public/img/banner_home.png');
-    background-size: cover;
-    background-position: top;
+#seccion_banner_global{
+    &.section_bannerHome{        
+        padding: 250px 50px 80px;
+        background-image: url('/public/img/banner_home.png');
+        background-size: cover;
+        background-position: top;
+    }
     .content_banner{
         p{
             font-size: 16px;

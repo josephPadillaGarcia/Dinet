@@ -133,6 +133,101 @@ footer .pie .developer .img-dev img.litt {
   animation: flotar 2s linear infinite;
 }
 
+#seccion_banner_global.section_bannerNosotros {
+  padding: 250px 50px 80px;
+  background-image: url("/public/img/banner.png");
+  background-size: cover;
+  background-position: top;
+}
+#seccion_banner_global .titulo_banner {
+  position: relative;
+}
+#seccion_banner_global .titulo_banner:before {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 4px;
+  background-color: #f67706;
+  left: 50%;
+  bottom: -10px;
+  transform: translate(-50%, 0);
+}
+
+/*========================================*/
+/*
+    Section Video Dinet
+*/
+#section_video_nosotros .content_info_video {
+  margin-right: 20px;
+}
+#section_video_nosotros .content_info_video h3 {
+  color: #0D2355;
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+#section_video_nosotros .content_info_video h3 b {
+  color: #F67706;
+}
+#section_video_nosotros .content_info_video p {
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+#section_video_nosotros .content_info_video p b {
+  color: #0D2355;
+}
+#section_video_nosotros .video_nosotros img {
+  width: 100%;
+  margin: auto;
+  display: table;
+  filter: drop-shadow(0px 2px 40px rgba(0, 0, 0, 0.2));
+}
+
+/*========================================*/
+/*
+    Section Mensaje
+*/
+#mensaje .content_mensaje h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0D2355;
+  text-align: center;
+}
+#mensaje .content_mensaje h3 b {
+  color: #F67706;
+}
+
+/*========================================*/
+/*
+    Section Slider Testimonios
+*/
+#seccion_slider_soluciones .carosusel_testimonios .item {
+  filter: none !important;
+}
+#seccion_slider_soluciones .carosusel_testimonios .item img {
+  width: auto;
+  margin: auto;
+  display: table;
+}
+#seccion_slider_soluciones .carosusel_testimonios .item .content_solucion {
+  padding: 15px 25px 0px 25px !important;
+}
+#seccion_slider_soluciones .carosusel_testimonios .item .content_solucion b {
+  display: block;
+  padding-bottom: 20px !important;
+}
+
+/*========================================*/
+/*
+    Responsive
+*/
+@media (max-width: 990px) {
+  #section_video_nosotros .content_info_video {
+    margin-right: 0px !important;
+    margin-bottom: 40px;
+  }
+}
 /*======================================*/
 * {
   font-family: sans-serif !important;
@@ -158,8 +253,8 @@ img {
 }
 
 .bottom_section {
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .grid {
@@ -233,6 +328,7 @@ ul li {
 .titulo {
   color: #0D2355;
   font-weight: bold !important;
+  font-size: 38px;
 }
 
 /*====================*/
@@ -248,28 +344,29 @@ ul li {
   font-weight: bold;
   color: #0D2355;
   font-size: 38px;
+  margin-bottom: 35px;
 }
 
 /*========================================*/
 /*
     Section Banner Home
 */
-#seccion_banner_home {
+#seccion_banner_global.section_bannerHome {
   padding: 250px 50px 80px;
   background-image: url("/public/img/banner_home.png");
   background-size: cover;
   background-position: top;
 }
-#seccion_banner_home .content_banner p {
+#seccion_banner_global .content_banner p {
   font-size: 16px;
   color: #484848;
 }
-#seccion_banner_home .content_banner b {
+#seccion_banner_global .content_banner b {
   color: #F67706;
   font-size: 18px;
   font-weight: bold;
 }
-#seccion_banner_home .content_banner .content_input_search input.input_search {
+#seccion_banner_global .content_banner .content_input_search input.input_search {
   height: 64px !important;
   margin-top: 10px;
   border: none;
@@ -279,19 +376,19 @@ ul li {
   font-size: 14px;
   filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.12));
 }
-#seccion_banner_home .content_banner .content_input_search span {
+#seccion_banner_global .content_banner .content_input_search span {
   top: 50%;
   left: 20px;
   transform: translate(0, -50%);
 }
-#seccion_banner_home .content_banner .content_input_search a {
+#seccion_banner_global .content_banner .content_input_search a {
   text-decoration: none;
   top: 50%;
   right: 15px;
   transform: translate(0, -50%);
   font-size: 16px;
 }
-#seccion_banner_home .content_banner b, #seccion_banner_home .content_banner input {
+#seccion_banner_global .content_banner b, #seccion_banner_global .content_banner input {
   display: block;
 }
 
