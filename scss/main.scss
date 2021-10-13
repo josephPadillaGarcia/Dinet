@@ -4,6 +4,7 @@
 @import 'header';
 @import 'footer';
 @import 'nosotros';
+@import 'servicios';
 
 /*======================================*/
 *{
@@ -32,6 +33,10 @@ img{
 .bottom_section{
     padding-bottom: 60px;
     margin-bottom: 60px;
+}
+
+.paddingb_section{
+    padding-bottom: 60px;
 }
 
 .grid{

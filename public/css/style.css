@@ -248,6 +248,49 @@ footer .pie .developer .img-dev img.litt {
     margin-bottom: 40px;
   }
 }
+/*========================================*/
+/*
+    Section Servicios
+*/
+#section-servicios .content_servicio {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+  filter: drop-shadow(0px 2px 40px rgba(13, 35, 85, 0.2));
+}
+#section-servicios .content_servicio .img_servicio img {
+  width: 100%;
+}
+#section-servicios .content_servicio .info_servicio {
+  background-color: #ffffff;
+  padding: 35px 40px 30px;
+}
+#section-servicios .content_servicio .info_servicio b {
+  color: #0D2355;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+#section-servicios .content_servicio .info_servicio p {
+  font-size: 13px;
+}
+#section-servicios .content_servicio a {
+  top: -40px;
+  right: 28px;
+}
+#section-servicios .content_servicio a span {
+  display: grid;
+  width: 45px;
+  height: 45px;
+  background-color: #F67706;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
 /*======================================*/
 * {
   font-family: sans-serif !important;
@@ -275,6 +318,10 @@ img {
 .bottom_section {
   padding-bottom: 60px;
   margin-bottom: 60px;
+}
+
+.paddingb_section {
+  padding-bottom: 60px;
 }
 
 .grid {
