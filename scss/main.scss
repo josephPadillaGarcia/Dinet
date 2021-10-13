@@ -37,8 +37,15 @@ img{
     display: grid;
 }
 
+.flex{
+    display: flex;
+}
+
 .align-center{
     align-items: center;
+}
+.align-end{
+    align-items: end;
 }
 
 .justify-center{
@@ -47,6 +54,13 @@ img{
 
 a{
     text-decoration: none !important;
+}
+
+ul{
+    margin: 0 !important;
+    li{
+        list-style: none;
+    }
 }
 
 /*====================*/
@@ -238,28 +252,37 @@ a{
             width: 100%;
         }
     }
-    .content_text_rastreo{
-        text-align: right;
-        margin-bottom: 100px;
-        h3{
-            color: $color_primary;
-            font-weight: bold;
-            font-size: 38px;
-            margin-bottom: 18px;            
-            b{
-                color: $color_secundary;
-            }
-        }
-        p{
-            font-size: 18px;
-            b{
+    .info_rastreo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        .content_text_rastreo{
+            text-align: right;
+            //margin-bottom: 100px;
+            h3{
                 color: $color_primary;
+                font-weight: bold;
+                font-size: 38px;
+                margin-bottom: 18px;            
+                b{
+                    color: $color_secundary;
+                }
+            }
+            p{
+                font-size: 18px;
+                b{
+                    color: $color_primary;
+                }
             }
         }
-    }
-    .img_apps{
-        margin: auto;
-        display: table;
+        .img_apps{
+            display: flex;
+            justify-content: center;
+            img{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
     }
 }
 
@@ -321,6 +344,7 @@ a{
             }
         }
         .datos{
+            margin-bottom: 20px;
             img{
                 padding-bottom: 20px;
             }
@@ -424,13 +448,214 @@ a{
             }
         }
         p{
+            padding-top: 8px;
             font-size: 18px;
         }
         .caja_botones{
-            display: flex;
+            padding-top: 8px;
             a{
                 margin-right: 18px;
             }
         }
     }
+}
+
+
+/*========================================*/
+/*
+    Responsive
+*/
+@media (max-width: 1200px){
+
+    #section_rastreo {
+        .info_rastreo {
+            .content_text_rastreo {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    footer{
+        .pie{
+            .developer{
+                justify-content: end;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px){
+    #section_tutoriales{
+        .content_tutorial{
+            justify-content: space-around !important;
+        }
+    }
+
+    #section_rastreo {
+        .info_rastreo {
+            .content_text_rastreo {
+                text-align: center;
+            }
+        }
+    }
+    
+    #section_datos{
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        .img_dato{
+            img{
+                display: none;
+            }
+        }
+    }
+
+    footer{        
+        .logo_blanco{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            img{
+                margin: auto;
+                display: table;
+            }
+        }
+        .info_footer{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 765px){
+    .no_mobil{
+        display: none !important;
+    }
+    footer {
+        .info_footer {
+            padding-left: 2rem;
+        }
+    }
+}
+
+@media (max-width: 736px){
+    footer {
+        .pie{
+            .copyright{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .developer{
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    #seccion_slider_soluciones{
+        .carousel_saluciones{    
+            .owl-nav{
+                display: flex;
+                justify-content: center;
+                button{
+                    margin-right: 15px;
+                    margin-top: 20px;
+                    &.owl-prev{
+                        left: 0;
+                    }
+                    &.owl-next{
+                        right: 0;
+                    }
+                    &.owl-prev, &.owl-next{                
+                        position: initial;
+                        top: 0;
+                    }
+                }
+            }    
+        }
+    }
+}
+
+@media (max-width: 590px){
+    #section_tutoriales{
+        .content_tutorial{
+            flex-flow: wrap;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    #section_datos{
+        padding-bottom: 40px;
+        margin-bottom: 40px;        
+        .content_text_rastreo{
+            h3{
+                text-align: center;
+            }
+            .datos{
+                display: grid;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 68px;
+                img{
+                    padding-bottom: 20px;
+                    margin: auto;
+                }
+            }
+        }
+        .img_dato{
+            img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px){
+    #section_rastreo{
+        background-size: cover;
+        border-radius: 10px;
+        .img_cinta{
+            display: none;
+        }
+        .info_rastreo{
+            .content_text_rastreo{
+                padding-top: 40px;
+                margin-bottom: 10px;
+                h3{
+                    color: #ffffff;
+                }
+                p{
+                    display: none;
+                }
+            }
+            .img_apps{
+                display: block !important;
+                justify-content: initial !important;
+                margin: auto;
+                img{
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    #section_darkstore{
+        .man-dinet{
+            padding: 50px;
+        }
+        .content_store{
+            .caja_botones{
+                padding-top: 8px;
+                a{
+                    width: 100%;
+                    display: block;
+                    margin-right: 18px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
 }
