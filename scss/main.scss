@@ -40,6 +40,10 @@ img{
     padding-bottom: 60px;
 }
 
+.marginb_section{
+    margin-bottom: 60px;
+}
+
 .grid{
     display: grid;
 }
@@ -149,20 +153,27 @@ header{
 #seccion_banner_global{
     overflow: hidden;
     video{
+        z-index: -50;
+        width: 100vw;
+        height: 56.25vw;
+        min-height: 100vh;
+        min-width: 177.77vh;
         position: absolute;
         top: 50%;
-        left: 0;
-        transform: translate(0, -50%);
-        z-index: -50;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
     }
 
     &.section_bannerHome{        
-        padding: 250px 50px 80px;
+        //padding: 250px 50px 80px;
         /*background-image: url('/public/img/banner_home.png');
         background-size: cover;
         background-position: top;*/
         background-color: #ffffffbd;
-        height: 100vh;
+        height: 100vh;        
+        display: grid;
+        align-items: center;
     }
     .navbar-toggler{
         &:focus{
@@ -173,6 +184,7 @@ header{
         }
     }
     .content_banner{
+        padding: 0 20px;
         p{
             font-size: 16px;
             color: $colortexto;
@@ -206,6 +218,12 @@ header{
                 right: 15px;
                 transform: translate(0, -50%);
                 font-size: 16px;
+                b{
+                    color: #ffffff;
+                }
+                i{
+                    display: none;
+                }
             }
         }
         b, input{
@@ -286,7 +304,7 @@ header{
     Section Rastreo
 */
 #section_rastreo{
-    background-image: url(/public/img/cinta.png);
+    background-image: url('/public/img/cinta.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% 160px;
@@ -715,6 +733,35 @@ header{
 }
 
 @media (max-width: 480px){
+    
+    .section_bannerHome{
+        .content_banner{
+            p{
+                display: none;
+            }
+            .content_input_search{
+                input{
+                    padding-left: 20px !important;
+                }
+                span{
+                    display: none;
+                }
+                a{
+                    &.btn_global{
+                        padding: 12px 20px;
+                    }
+                    b{
+                        color: #ffffff !important;
+                        display: none !important;
+                    }
+                    i{
+                        display: block !important;
+                        color: #ffffff !important;
+                    }
+                }
+            }
+        }
+    }
     #section_darkstore{
         .man-dinet{
             padding: 50px;
@@ -731,5 +778,9 @@ header{
             }
         }
     }
+
+}
+
+@media (max-width: 435px){
 
 }

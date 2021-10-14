@@ -12,10 +12,10 @@ Tipo de letra
 #content_header .navbar .logo_dinet {
   left: 0;
   top: 0;
-  padding: 30px 40px 30px 40px;
+  padding: 30px 40px 35px 30px;
   background-color: #ffffff;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.12);
-  border-bottom-right-radius: 85px;
+  border-bottom-right-radius: 75px;
 }
 #content_header .navbar .logo_dinet img {
   width: 100%;
@@ -47,7 +47,7 @@ Tipo de letra
 }
 
 footer {
-  background-image: url("/public/img/Footer.png");
+  background-image: url("/public/img/footer.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0 20px 0;
@@ -361,7 +361,7 @@ footer .pie .developer .img-dev img.litt {
     Section Rastreo V2
 */
 #section_rastreov2 .container .row {
-  background-image: url(/public/img/cinta.png);
+  background-image: url("/public/img/cinta.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -486,6 +486,10 @@ img {
   padding-bottom: 60px;
 }
 
+.marginb_section {
+  margin-bottom: 60px;
+}
+
 .grid {
   display: grid;
 }
@@ -595,25 +599,34 @@ header .navbar .navbar-collapse {
   overflow: hidden;
 }
 #seccion_banner_global video {
+  z-index: -50;
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  z-index: -50;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 #seccion_banner_global.section_bannerHome {
-  padding: 250px 50px 80px;
   /*background-image: url('/public/img/banner_home.png');
   background-size: cover;
   background-position: top;*/
   background-color: #ffffffbd;
   height: 100vh;
+  display: grid;
+  align-items: center;
 }
 #seccion_banner_global .navbar-toggler:focus {
   box-shadow: none;
 }
 #seccion_banner_global .navbar-toggler i {
   color: #F67706;
+}
+#seccion_banner_global .content_banner {
+  padding: 0 20px;
 }
 #seccion_banner_global .content_banner p {
   font-size: 16px;
@@ -645,6 +658,12 @@ header .navbar .navbar-collapse {
   right: 15px;
   transform: translate(0, -50%);
   font-size: 16px;
+}
+#seccion_banner_global .content_banner .content_input_search a b {
+  color: #ffffff;
+}
+#seccion_banner_global .content_banner .content_input_search a i {
+  display: none;
 }
 #seccion_banner_global .content_banner b, #seccion_banner_global .content_banner input {
   display: block;
@@ -716,7 +735,7 @@ header .navbar .navbar-collapse {
     Section Rastreo
 */
 #section_rastreo {
-  background-image: url(/public/img/cinta.png);
+  background-image: url("/public/img/cinta.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 160px;
@@ -1074,6 +1093,27 @@ header .navbar .navbar-collapse {
   }
 }
 @media (max-width: 480px) {
+  .section_bannerHome .content_banner p {
+    display: none;
+  }
+  .section_bannerHome .content_banner .content_input_search input {
+    padding-left: 20px !important;
+  }
+  .section_bannerHome .content_banner .content_input_search span {
+    display: none;
+  }
+  .section_bannerHome .content_banner .content_input_search a.btn_global {
+    padding: 12px 20px;
+  }
+  .section_bannerHome .content_banner .content_input_search a b {
+    color: #ffffff !important;
+    display: none !important;
+  }
+  .section_bannerHome .content_banner .content_input_search a i {
+    display: block !important;
+    color: #ffffff !important;
+  }
+
   #section_darkstore .man-dinet {
     padding: 50px;
   }
