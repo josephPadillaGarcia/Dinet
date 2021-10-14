@@ -334,7 +334,7 @@ footer .pie .developer .img-dev img.litt {
 #form_servicio form .grupo-form label {
   color: #0D2355;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: bold;
 }
 #form_servicio form .grupo-form input[type=text], #form_servicio form .grupo-form select {
   width: 100%;
@@ -932,6 +932,18 @@ header .navbar .navbar-collapse {
 }
 #section_darkstore .content_store .caja_botones a {
   margin-right: 18px;
+}
+
+/*========================================*/
+/*
+    Pagina Contacto
+*/
+#form_servicio .img_contacto {
+  margin-bottom: 40px;
+}
+#form_servicio .img_contacto img {
+  margin: auto;
+  display: block;
 }
 
 /*========================================*/
