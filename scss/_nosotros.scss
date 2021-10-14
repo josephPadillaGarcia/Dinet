@@ -132,6 +132,21 @@
     Responsive
 */
 @media (max-width: 990px){
+    header{
+        nav{
+            .navbar-nav{
+                .nav-item{
+                    .codigo_envio{
+                        margin-bottom: 12px;
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     #section_video_nosotros{
         .content_info_video{
             margin-right: 0px !important;

@@ -5,6 +5,7 @@
 @import 'footer';
 @import 'nosotros';
 @import 'servicios';
+@import 'single-servicios';
 
 /*======================================*/
 *{
@@ -66,6 +67,19 @@ ul{
     margin: 0 !important;
     li{
         list-style: none;
+    }
+}
+
+header{
+    .navbar{
+        padding: 0;
+        z-index: 50;
+        .container-fluid{
+            padding: 0;
+        }
+        .navbar-collapse{
+            padding-right: 20px;
+        }
     }
 }
 
@@ -133,11 +147,30 @@ ul{
     Section Banner Home
 */
 #seccion_banner_global{
+    overflow: hidden;
+    video{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        z-index: -50;
+    }
+
     &.section_bannerHome{        
         padding: 250px 50px 80px;
-        background-image: url('/public/img/banner_home.png');
+        /*background-image: url('/public/img/banner_home.png');
         background-size: cover;
-        background-position: top;
+        background-position: top;*/
+        background-color: #ffffffbd;
+        height: 100vh;
+    }
+    .navbar-toggler{
+        &:focus{
+            box-shadow: none;
+        }
+        i{
+            color: $color_secundary;
+        }
     }
     .content_banner{
         p{
@@ -495,6 +528,37 @@ ul{
 }
 
 @media (max-width: 990px){
+    header{
+        nav{
+            background-color: #ffffffc7;
+            .container-fluid{
+                .logo_dinet{
+                    box-shadow: none !important;
+                    padding: 30px !important;
+                    border-bottom-right-radius: 0px !important;
+                    background-color: initial !important;
+                    img{
+                        max-width: 70px !important;
+                    }
+                }
+                button{
+                    padding-right: 50px !important;
+                }
+                .navbar-collapse{
+                    padding-left: 20px;
+                    padding-bottom: 30px;
+                    .navbar-nav{
+                        li{
+                            .boton_buscar_header{
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     #section_tutoriales{
         .content_tutorial{
             justify-content: space-around !important;
