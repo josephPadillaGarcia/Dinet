@@ -544,6 +544,22 @@ footer .pie .developer .img-dev img.litt {
   padding-left: 5px;
 }
 
+.search {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+.search input {
+  font-size: 14px;
+  border-radius: 50px;
+  padding: 12px 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.search i {
+  top: 50%;
+  right: 22px;
+  transform: translate(0, -50%);
+}
+
 #seccion_tabs .list-tabs {
   display: flex;
   justify-content: center;
@@ -570,6 +586,50 @@ footer .pie .developer .img-dev img.litt {
   font-size: 15px;
   color: #0D2355;
   font-weight: bold;
+}
+
+#section-pagination .pagination {
+  padding-top: 50px;
+}
+#section-pagination .pagination .page-item {
+  margin-right: 8px;
+}
+#section-pagination .pagination .page-item.active a {
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50px !important;
+  color: #ffffff;
+  background-color: #F67706;
+}
+#section-pagination .pagination .page-item .prev {
+  margin-right: 20px;
+  font-size: 14px;
+  border: none;
+}
+#section-pagination .pagination .page-item .prev span i {
+  color: #F67706;
+}
+#section-pagination .pagination .page-item a {
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50px !important;
+  border: 1px solid #F67706;
+  color: #F67706;
+}
+#section-pagination .pagination .page-item a:hover {
+  background-color: #F67706;
+  color: #ffffff;
+}
+#section-pagination .pagination .page-item a:focus {
+  box-shadow: none !important;
+}
+#section-pagination .pagination .page-item .next {
+  margin-left: 20px;
+  font-size: 14px;
+  border: none;
+}
+#section-pagination .pagination .page-item .next span i {
+  color: #F67706;
 }
 
 /*======================================*/
