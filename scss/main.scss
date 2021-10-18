@@ -8,6 +8,7 @@
 @import 'single-servicios';
 @import 'acordion';
 @import 'blog';
+@import 'single-blog';
 
 /*======================================*/
 *{
@@ -442,7 +443,7 @@ header{
 /*
     Section Datos
 */
-#section_noticias, #seccion_tabs, #section-pagination{
+#section_noticias, #seccion_tabs, #section-pagination, #section_single_blog{
     .content_noticia{
         margin-top: 30px;
         img{
