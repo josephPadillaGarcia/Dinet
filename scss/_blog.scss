@@ -1,0 +1,31 @@
+#seccion_tabs{
+    .list-tabs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            border: none;
+            li{
+                .nav-link{
+                    border: 1px solid $color_secundary;
+                    margin-right: 8px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $color_secundary !important;
+                    border-radius: 50px;
+                    &.active{
+                        color: #ffffff !important;
+                        background-color: $color_secundary !important;
+                    }
+                }
+            }
+        }
+        p{
+            margin: 0;
+            padding-right: 15px;
+            font-size: 15px;
+            color: $color_primary;
+            font-weight: bold;
+        }
+    }
+}

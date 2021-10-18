@@ -544,6 +544,34 @@ footer .pie .developer .img-dev img.litt {
   padding-left: 5px;
 }
 
+#seccion_tabs .list-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#seccion_tabs .list-tabs ul {
+  border: none;
+}
+#seccion_tabs .list-tabs ul li .nav-link {
+  border: 1px solid #F67706;
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #F67706 !important;
+  border-radius: 50px;
+}
+#seccion_tabs .list-tabs ul li .nav-link.active {
+  color: #ffffff !important;
+  background-color: #F67706 !important;
+}
+#seccion_tabs .list-tabs p {
+  margin: 0;
+  padding-right: 15px;
+  font-size: 15px;
+  color: #0D2355;
+  font-weight: bold;
+}
+
 /*======================================*/
 * {
   font-family: sans-serif !important;
@@ -953,36 +981,36 @@ header .navbar .navbar-collapse {
 /*
     Section Datos
 */
-#section_noticias .content_noticia {
+#section_noticias .content_noticia, #seccion_tabs .content_noticia, #section-pagination .content_noticia {
   margin-top: 30px;
 }
-#section_noticias .content_noticia img {
+#section_noticias .content_noticia img, #seccion_tabs .content_noticia img, #section-pagination .content_noticia img {
   width: 100%;
   filter: drop-shadow(0px 2px 40px rgba(0, 0, 0, 0.2));
 }
-#section_noticias .content_noticia .fecha {
+#section_noticias .content_noticia .fecha, #seccion_tabs .content_noticia .fecha, #section-pagination .content_noticia .fecha {
   font-size: 12px;
   color: #0D2355;
   padding-top: 15px;
   margin-bottom: 5px;
 }
-#section_noticias .content_noticia p {
+#section_noticias .content_noticia p, #seccion_tabs .content_noticia p, #section-pagination .content_noticia p {
   font-size: 13px;
   line-height: 16px;
 }
-#section_noticias .content_noticia a {
+#section_noticias .content_noticia a, #seccion_tabs .content_noticia a, #section-pagination .content_noticia a {
   text-decoration: none;
 }
-#section_noticias .content_noticia a b {
+#section_noticias .content_noticia a b, #seccion_tabs .content_noticia a b, #section-pagination .content_noticia a b {
   color: #0D2355;
   display: block;
   line-height: 20px;
   padding-bottom: 8px;
 }
-#section_noticias .content_noticia a b:hover {
+#section_noticias .content_noticia a b:hover, #seccion_tabs .content_noticia a b:hover, #section-pagination .content_noticia a b:hover {
   color: #F67706;
 }
-#section_noticias .content_noticia a span {
+#section_noticias .content_noticia a span, #seccion_tabs .content_noticia a span, #section-pagination .content_noticia a span {
   display: grid;
   width: 45px;
   height: 45px;
@@ -992,7 +1020,7 @@ header .navbar .navbar-collapse {
   color: #ffffff;
   font-size: 20px;
   border-radius: 50%;
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 /*========================================*/
