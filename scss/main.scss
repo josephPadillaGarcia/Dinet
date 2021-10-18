@@ -314,7 +314,7 @@ header{
     Section Rastreo
 */
 #section_rastreo{
-    background-image: url('/public/img/cinta.png');
+    background-image: url('../../public/img/cinta.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% 160px;
@@ -400,7 +400,7 @@ header{
     Section Datos
 */
 #section_datos{
-    background-image: url('/public/img/fondo_mapa.png');
+    background-image: url('../../public/img/fondo_mapa.png');
     background-color: #F4F4F4;
     padding-top: 50px;
     margin-bottom: 40px;
@@ -605,6 +605,17 @@ header{
                 }
                 
                 .nav-item{
+                    a{
+                        span{
+                            &.icon-drop{
+                                bottom: 0 !important;
+                                top: 50%;
+                                left: initial !important;
+                                right: 0;
+                                transform: translate(0px, -50%) !important;
+                            }
+                        }
+                    }
                     .codigo_envio{
                         margin-bottom: 0 !important;
                         &.no-mobil{
