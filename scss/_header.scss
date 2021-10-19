@@ -22,7 +22,9 @@
                     top: 50%;
                     right: 0px;
                     transform: translate(0, -50%);
-                    border-radius: 50px;
+                    border-radius: 50px;                    
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
                     &.span-fixed{
                         padding: 15px 15px;
                         border-top-left-radius: 0;
@@ -40,7 +42,7 @@
             border-bottom-right-radius: 75px;
             transition: .3s;
             &.logo_dinet_fixed{
-                padding: 18px 0 18px 25px !important;
+                padding: 18px 0 18px 15px !important;
                 border-bottom-right-radius: 0px !important;
                 box-shadow: none !important;
             }
@@ -49,7 +51,7 @@
                 max-width: 95px;
                 transition: .3s;
                 &.img-fixed{
-                    max-width: 55px !important;
+                    max-width: 45px !important;
                 }
             }
         }
@@ -58,7 +60,10 @@
                 .nav-item{
                     display: grid;
                     align-content: center;
-                    margin: 0 15px;                 
+                    margin: 0 15px;
+                    &.hiden{
+                        display: none;
+                    }                 
                     &.boton{
                         border: 1px solid $color_secundary;
                         border-radius: 50px;
@@ -87,6 +92,48 @@
                                 bottom: -10px;
                                 left: 50%;
                                 transform: translate(-50%, 0);
+                            }
+                        }
+                    }
+                    div{
+                        &.dropdown-menu{
+                            top: 60px;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            border-radius: 10px;
+                            box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+                            padding: 32px 22px;
+                            border: none;
+                            .content-dropdown{
+                                display: grid;
+                                grid-template-columns: repeat(5, 1fr);
+                                padding: 0;
+                                align-items: center;
+                                li{
+                                    &.list-ser{
+                                        &:before{
+                                            content: '';
+                                            position: absolute;
+                                            width: 1px;
+                                            height: 20px;
+                                            background-color: #C4C4C4;
+                                            right: 0;
+                                            top: 50%;
+                                            transform: translate(0, -50%);
+                                        }
+                                    }
+                                    a{
+                                        display: flex;
+                                        align-items: center;
+                                        padding: .25rem 1.2rem;
+                                        &:hover{
+                                            background-color: initial;
+                                        }
+                                        img{
+                                            padding-right: 10px;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

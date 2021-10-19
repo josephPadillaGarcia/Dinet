@@ -43,6 +43,55 @@
             font-weight: bold;
         }
     }
+    .pagination{
+        padding-top: 50px;
+        .page-item{
+            margin-right: 8px;
+            &.active{                
+                a{
+                    font-size: 14px;
+                    font-weight: bold;
+                    border-radius: 50px !important;
+                    color: #ffffff;
+                    background-color: $color_secundary;
+                }
+            }
+            .prev{
+                margin-right: 20px;
+                font-size: 14px;
+                border: none;
+                span{
+                    i{
+                        color: $color_secundary;
+                    }
+                }
+            }
+            a{
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 50px !important;
+                border: 1px solid $color_secundary;
+                color: $color_secundary;
+                &:hover{
+                    background-color: $color_secundary;
+                    color: #ffffff;
+                }
+                &:focus{
+                    box-shadow: none !important;
+                }
+            }
+            .next{
+                margin-left: 20px;
+                font-size: 14px;
+                border: none;
+                span{
+                    i{
+                        color: $color_secundary;
+                    }
+                }
+            }
+        }
+    }
 }
 
 #section-pagination{

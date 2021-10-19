@@ -1,4 +1,5 @@
 @import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* secciones */
 @import 'header';
@@ -12,8 +13,12 @@
 
 /*======================================*/
 *{
-    font-family: $letraglobal !important;
+    //font-family: $letraglobal !important;
+    font-family: 'Open Sans', sans-serif;
     color: $colortexto;
+}
+p{    
+    font-size: 0.9rem !important;
 }
 
 header{
@@ -76,6 +81,9 @@ ul{
         list-style: none;
     }
 }
+.border-der{
+    border-right: 1px solid red;
+}
 
 header{
     .navbar{
@@ -127,6 +135,7 @@ header{
         text-decoration: none;
         padding-left: 80px;
         padding-right: 80px;
+        font-weight: bold;
     }
 }
 
@@ -282,6 +291,19 @@ header{
                     }
                 }
             }
+            &:hover{
+                .content_solucion{
+                    b{
+                        color: $color_secundary;
+                        transition: 0.4s;
+                    }
+                    a{
+                        background-color: $color_secundary;
+                        color: #ffffff;
+                        transition: 0.4s;
+                    }
+                }
+            }
         }
         button{
             &.owl-prev{
@@ -366,6 +388,9 @@ header{
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
+        img{
+            margin: auto;
+        }
         .caja_pregunta{
             padding: 30px 25px;  
             box-shadow: 0px 2px 40px rgba(13, 35, 85, 0.2);
@@ -498,6 +523,46 @@ header{
     }
 }
 
+#section_clientes{
+    .carousel_clientes{
+        .owl-stage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .item{
+                margin-bottom: 25px;
+                img{
+                    width: auto !important;
+                    margin: auto;
+                }
+            }
+        }        
+        button{
+            &.owl-prev{
+                left: -30px;
+            }
+            &.owl-next{
+                right: -30px;
+            }
+            &.owl-prev, &.owl-next{                
+                position: absolute;
+                top: 0px;
+                span {
+                    font-size: 25px;
+                    border: 1px solid $color_primary;
+                    padding: 0 12px 5px;
+                    border-radius: 50%;
+                    color: $color_primary;
+                    &:hover{
+                        background: $color_primary;
+                        color: #ffffff !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /*========================================*/
 /*
     Section Store
@@ -564,6 +629,13 @@ header{
 /*
     Responsive
 */
+@media (min-width: 1400px){
+    #section_rastreo{
+        .img_apps{
+            margin-top: 25px;
+        }
+    }
+}
 @media (max-width: 1200px){
 
     #section_rastreo {
@@ -600,7 +672,7 @@ header{
                     border-bottom-right-radius: 0px !important;
                     background-color: initial !important;
                     img{
-                        max-width: 70px !important;
+                        max-width: 50px !important;
                     }
                 }
                 
@@ -626,9 +698,46 @@ header{
                             width: 100% !important;
                         }
                     }
+                    div{
+                        &.dropdown-menu{
+                            top: initial !important;
+                            left: initial !important;
+                            transform: none !important;
+                            border-radius: 10px;
+                            box-shadow: none !important;
+                            padding: 12px 5px !important;
+                            border: 1px solid #C4C4C4 !important;
+                            .content-dropdown{
+                                display: block !important;
+                                grid-template-columns: none !important;
+                                padding: initial !important;
+                                li{
+                                    padding-bottom: 8px;
+                                    margin-bottom: 10px;
+                                    &.list-ser{
+                                        &:before{
+                                            width: 0 !important;
+                                            height: 0 !important;
+                                        }
+                                    }
+                                    a{
+                                        display: flex;
+                                        align-items: center;
+                                        padding: .25rem 1.2rem;
+                                        &:hover{
+                                            background-color: initial;
+                                        }
+                                        img{
+                                            padding-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 button{
-                    padding-right: 50px !important;
+                    padding-right: 30px !important;
                 }
                 .navbar-collapse{
                     padding-left: 20px;
@@ -690,8 +799,10 @@ header{
         display: none !important;
     }
     footer {
-        .info_footer {
-            padding-left: 2rem;
+        .menu_footer, .opciones_footer {
+            ul{
+                padding: 0;
+            }
         }
     }
 }
@@ -711,8 +822,8 @@ header{
 }
 
 @media (max-width: 600px){
-    #seccion_slider_soluciones{
-        .carousel_saluciones{    
+    #seccion_slider_soluciones, #section_clientes{
+        .carousel_saluciones, .carousel_clientes{    
             .owl-nav{
                 display: flex;
                 justify-content: center;
@@ -857,6 +968,32 @@ header{
                 button{
                     padding-right: 5px !important;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 305px){
+    header{
+        nav{
+            .navbar-nav{
+                .nav-item{
+                    .codigo_envio{
+                        input{
+                            padding: 8px 10px !important;
+                        }
+                        span{
+                            padding: 8px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo_dinet{
+        img{
+            &.img-fixed{
+                max-width: 45px !important;
             }
         }
     }

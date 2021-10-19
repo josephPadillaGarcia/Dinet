@@ -7,14 +7,15 @@
             }
         }
         .texto-single{
+            margin-bottom: 25px;
             p{
-                font-size: 13px;
+                text-align: justify;
+            }
+            b{
+                font-size: 0.9rem;
                 color: $color_primary;
                 text-align: justify;
-                b{
-                    display: block;
-                    color: $color_primary;
-                }
+                display: block;
             }
         }
         .compartir{
