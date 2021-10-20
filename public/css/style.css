@@ -127,6 +127,7 @@ Tipo de letra
 }
 #content_header .navbar .collapse .navbar-nav .nav-item div.dropdown-menu .content-dropdown li a:hover {
   background-color: initial;
+  color: #F67706;
 }
 #content_header .navbar .collapse .navbar-nav .nav-item div.dropdown-menu .content-dropdown li a img {
   padding-right: 10px;
@@ -190,6 +191,7 @@ footer .pie .developer {
   align-items: center;
   display: flex;
   color: #ffffff;
+  justify-content: end;
 }
 footer .pie .developer a {
   transition: 0.5s;
@@ -296,6 +298,21 @@ footer .pie .developer .img-dev img.litt {
   display: table;
   filter: drop-shadow(0px 2px 40px rgba(0, 0, 0, 0.2));
 }
+#section_video_nosotros .video_nosotros .icon_play {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#section_video_nosotros .video_nosotros .icon_play img {
+  width: 38px;
+  height: 38px;
+}
+#section_video_nosotros .video_nosotros:hover .icon_play {
+  background-color: #F67706;
+}
 
 /*========================================*/
 /*
@@ -352,6 +369,53 @@ footer .pie .developer .img-dev img.litt {
 /*
     Section Servicios
 */
+#section-servicios .item {
+  background: #ffffff;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 20px;
+  filter: drop-shadow(0px 2px 10px rgba(13, 35, 85, 0.2));
+}
+#section-servicios .item a img {
+  width: 100%;
+}
+#section-servicios .item .content_solucion {
+  padding: 50px 25px 35px 25px;
+}
+#section-servicios .item .content_solucion span {
+  background: #F67706;
+  padding: 15px;
+  border-radius: 50%;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#section-servicios .item .content_solucion b {
+  color: #0D2355;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 8px;
+}
+#section-servicios .item .content_solucion p {
+  font-size: 13px;
+}
+#section-servicios .item .content_solucion a {
+  margin: auto;
+  display: table;
+}
+#section-servicios .item .content_solucion a:hover {
+  color: #F67706;
+}
+#section-servicios .item:hover .content_solucion b {
+  color: #F67706;
+  transition: 0.4s;
+}
+#section-servicios .item:hover .content_solucion a {
+  background-color: #F67706;
+  color: #ffffff;
+  transition: 0.4s;
+}
 #section-servicios .content_servicio {
   border-radius: 10px;
   overflow: hidden;
@@ -628,6 +692,7 @@ footer .pie .developer .img-dev img.litt {
   font-weight: bold;
   color: #F67706 !important;
   border-radius: 50px;
+  margin-top: 10px;
 }
 #seccion_tabs .list-tabs ul li .nav-link.active, #section_single_blog .list-tabs ul li .nav-link.active {
   color: #ffffff !important;
@@ -1077,11 +1142,12 @@ header .navbar .navbar-collapse {
   top: 80px;
 }
 #seccion_slider_soluciones .carousel_saluciones button.owl-prev span, #seccion_slider_soluciones .carousel_saluciones button.owl-next span {
-  font-size: 25px;
+  font-size: 24px;
   border: 1px solid #0D2355;
-  padding: 0 12px 5px;
+  padding: 0 15px 5px;
   border-radius: 50%;
   color: #0D2355;
+  background: #ffffff;
 }
 #seccion_slider_soluciones .carousel_saluciones button.owl-prev span:hover, #seccion_slider_soluciones .carousel_saluciones button.owl-next span:hover {
   background: #0D2355;
@@ -1104,10 +1170,11 @@ header .navbar .navbar-collapse {
 #section_rastreo .info_rastreo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 #section_rastreo .info_rastreo .content_text_rastreo {
   text-align: right;
+  padding-top: 50px;
 }
 #section_rastreo .info_rastreo .content_text_rastreo h3 {
   color: #0D2355;
@@ -1126,11 +1193,11 @@ header .navbar .navbar-collapse {
 }
 #section_rastreo .info_rastreo .img_apps {
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  margin-bottom: 20px;
 }
 #section_rastreo .info_rastreo .img_apps img {
   margin-left: 10px;
-  margin-right: 10px;
 }
 
 /*========================================*/
@@ -1356,11 +1423,13 @@ header .navbar .navbar-collapse {
 /*
     Responsive
 */
-@media (min-width: 1400px) {
-  #section_rastreo .img_apps {
-    margin-top: 25px;
-  }
-}
+/*@media (min-width: 1400px){
+    #section_rastreo{
+        .img_apps{
+            margin-top: 25px;
+        }
+    }
+}*/
 @media (max-width: 1200px) {
   #section_rastreo .info_rastreo .content_text_rastreo {
     margin-bottom: 60px;
@@ -1457,6 +1526,10 @@ header .navbar .navbar-collapse {
 
   #section_rastreo .info_rastreo .content_text_rastreo {
     text-align: center;
+  }
+  #section_rastreo .info_rastreo .img_apps {
+    justify-content: center !important;
+    margin: 0;
   }
 
   #section_datos {

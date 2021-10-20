@@ -316,11 +316,12 @@ header{
                 position: absolute;
                 top: 80px;
                 span {
-                    font-size: 25px;
-                    border: 1px solid $color_primary;
-                    padding: 0 12px 5px;
+                    font-size: 24px;
+                    border: 1px solid #0D2355;
+                    padding: 0 15px 5px;
                     border-radius: 50%;
-                    color: $color_primary;
+                    color: #0D2355;
+                    background: #ffffff;
                     &:hover{
                         background: $color_primary;
                         color: #ffffff !important;
@@ -348,10 +349,10 @@ header{
     .info_rastreo{
         display: flex;
         flex-direction: column;
-        justify-content: space-around; 
+        justify-content: space-between; 
         .content_text_rastreo{
             text-align: right;
-            //margin-bottom: 100px;
+            padding-top: 50px;
             h3{
                 color: $color_primary;
                 font-weight: bold;
@@ -370,10 +371,11 @@ header{
         }
         .img_apps{
             display: flex;
-            justify-content: center;
+            justify-content: end;
+            margin-bottom: 20px;
             img{
                 margin-left: 10px;
-                margin-right: 10px;
+                //margin-right: 10px;
             }
         }
     }
@@ -629,13 +631,13 @@ header{
 /*
     Responsive
 */
-@media (min-width: 1400px){
+/*@media (min-width: 1400px){
     #section_rastreo{
         .img_apps{
             margin-top: 25px;
         }
     }
-}
+}*/
 @media (max-width: 1200px){
 
     #section_rastreo {
@@ -764,6 +766,10 @@ header{
         .info_rastreo {
             .content_text_rastreo {
                 text-align: center;
+            }
+            .img_apps{
+                justify-content: center !important;
+                margin: 0;
             }
         }
     }

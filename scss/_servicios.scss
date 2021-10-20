@@ -3,6 +3,61 @@
     Section Servicios
 */
 #section-servicios{
+
+    .item{
+        background: #ffffff;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-top: 20px;
+        filter: drop-shadow(0px 2px 10px rgba(13, 35, 85, 0.2));
+        a{
+            img{
+                width: 100%;
+            }
+        }
+        .content_solucion{
+            padding: 50px 25px 35px 25px;
+            span{
+                background: $color_secundary;
+                padding: 15px;
+                border-radius: 50%;
+                top: -30px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            b{
+                color: $color_primary;
+                font-size: 18px;
+                font-weight: bold;
+                display: block;
+                padding-bottom: 8px;
+            }
+            p{
+                font-size: 13px;
+            }
+            a{
+                margin: auto;
+                display: table;
+                &:hover{
+                    color: $color_secundary;
+                }
+            }
+        }
+        &:hover{
+            .content_solucion{
+                b{
+                    color: $color_secundary;
+                    transition: 0.4s;
+                }
+                a{
+                    background-color: $color_secundary;
+                    color: #ffffff;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+
     .content_servicio{
         border-radius: 10px;
         overflow: hidden;

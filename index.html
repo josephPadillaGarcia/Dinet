@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/owl.carousel.min.css">
     <link rel="stylesheet" href="public/css/flaticon.css">
-    <script type="text/javascript" src="public/js/jquery.min.js"></script>
+    <script src="public/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery.counterup.min.js"></script> 
+    <link rel="stylesheet" href="public/css/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
 </head>
 
 <body>
@@ -55,7 +58,7 @@
                                 </li-->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle position-relative" href="servicios.html" id="navbarDropdown"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        role="button" >
                                         Servicios
                                         <span class="icon-drop position-absolute"><i
                                                 class="flaticon-descargar"></i></span>
@@ -257,6 +260,7 @@
                 <div class="col-lg-6">
                     <div class="content_tutorial">
                         <img class="img_tutorial" src="public/img/img_tutorial.png" alt="">
+                        <a id="example1" href="./public/img/1_b.jpg"><img alt="example1" src="./public/img/1_s.jpg" /></a>
                         <div class="caja_pregunta">
                             <p>¿Cómo sacar un turno para ir a la sucursal?</p>
                             <a class="position-relative" href="#!">ver video <span class="position-absolute"><img
@@ -311,17 +315,17 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 datos">
                                 <img src="public/img/caja.png" alt="">
-                                <b id="numero_envios"></b>
+                                <b class="counter">256156</b>
                                 <p>Envíos realizados</p>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 datos">
-                                <img src="public/img/moto.png" alt="">
-                                <b id="numero_unidades"></b>
+                                <img  src="public/img/moto.png" alt="">
+                                <b class="counter" >352</b>
                                 <p>Unidades ecommerce</p>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 datos">
                                 <img src="public/img/cajas.png" alt="">
-                                <b id="numero_almacenes"></b>
+                                <b class="counter" >84</b>
                                 <p>M2 de almacenes ecommerce</p>
                             </div>
                         </div>
@@ -334,6 +338,25 @@
                 </div>
             </div>
         </div>
+        <!--div class="container">
+            <div class="row">
+              <div class="col-md-4" >
+                <h1><span class="counter">2,523</span></h1>
+                <h3>Customers</h3>
+                <i class="fa fa-users"></i>
+              </div> 
+              <div class="col-md-4">
+                <h1><span class="counter">63,075</span></h1>
+                <h3>Total Web Pages</h3>
+                <i class="fa fa-desktop"></i>
+              </div>
+              <div class="col-md-4">
+                <h1><span class="counter">12,218</span></h1>
+                <h3>Cups Of Coffee</h3>
+                <i class="fa fa-coffee"></i>
+              </div>
+            </div>
+          </div-->
     </section>
 
     <section id="section_noticias" class="bottom_section">
@@ -513,7 +536,17 @@
     <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="public/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="public/js/app.js"></script>
-
+    <script type="text/javascript" src="public/js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="public/js/jquery.easing-1.3.pack.js"></script> 
+    <script type="text/javascript" src="public/js/jquery.mousewheel-3.0.4.pack.js"></script>
+    
+    
+    <script>
+        $(document).ready(function() {
+            $("a#example1").fancybox();
+        });
+    </script>
+    
 </body>
 
 </html>
