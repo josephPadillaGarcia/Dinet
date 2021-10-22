@@ -189,10 +189,16 @@ header{
         /*background-image: url('/public/img/banner_home.png');
         background-size: cover;
         background-position: top;*/
-        background-color: #ffffffbd;
-        height: 100vh;        
+        background: #ffffffbd;
+        //background-image: url('../../public/img/fondo_home-video.png');
+        height: 100vh;
         display: grid;
         align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &.section_bannerHome_02{
+        background-image: url('../../public/img/fondo_home-video.png') !important;
     }
     .navbar-toggler{
         &:focus{
