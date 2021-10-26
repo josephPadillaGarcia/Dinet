@@ -8,7 +8,10 @@ Tamaño de letra
 /*
 Tipo de letra
 */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "OpenSans";
+  src: url("../../public/static/OpenSans/OpenSans-Regular.ttf") format("truetype");
+}
 /* secciones */
 #content_header .navbar .nav-item .codigo_envio input {
   border: 0;
@@ -853,7 +856,7 @@ footer .pie .developer .img-dev img.litt {
 
 /*======================================*/
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans";
   color: #484848;
 }
 

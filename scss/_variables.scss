@@ -13,4 +13,7 @@ $sizetextTitulo : 30px;
 /*
 Tipo de letra
 */
-$letraglobal : sans-serif;
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../../public/static/OpenSans/OpenSans-Regular.ttf') format('truetype');
+}
