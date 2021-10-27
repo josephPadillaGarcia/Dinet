@@ -309,9 +309,13 @@ footer .pie .developer .img-dev img.litt {
   border-radius: 50%;
   cursor: pointer;
 }
-#section_video_nosotros .video_nosotros .icon_play img {
-  width: 38px;
-  height: 38px;
+#section_video_nosotros .video_nosotros .icon_play span.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 27px solid #ffffff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  display: block;
 }
 #section_video_nosotros .video_nosotros:hover .icon_play {
   background-color: #F67706;
