@@ -55,12 +55,13 @@
                 }
             }
         }
-        .collapse{
+        .collapse, .collapsing{
             .navbar-nav{
                 .nav-item{
                     display: grid;
                     align-content: center;
                     margin: 0 15px;
+                    padding: 6px 0;
                     &.hiden{
                         display: none;
                     }                 
@@ -71,6 +72,7 @@
                     }
                     &.b_boton{
                         background-color: $color_secundary;
+                        margin-top: 15px;
                     }
                     a{
                         color: $color_primary;
@@ -92,6 +94,26 @@
                                 bottom: -10px;
                                 left: 50%;
                                 transform: translate(-50%, 0);
+                            }
+                        }
+                    }
+                    .list-servicios-mobil {
+                        display: grid;
+                        a{
+                            &.dropdown-toggle{
+                                &::after{
+                                    content: none;
+                                }
+                            }
+                        }
+                        span{
+                            &.icon-drop{
+                                display: grid;
+                                justify-content: center;
+                                i.flaticon-descargar{
+                                    line-height: 0px;
+                                    color: $color_secundary;
+                                }
                             }
                         }
                     }
@@ -138,6 +160,11 @@
                             }
                         }
                     }
+                    /*&:hover{
+                        .dropdown-menu{
+                            display: block;
+                        }
+                    }*/
                 }
             }
         }
