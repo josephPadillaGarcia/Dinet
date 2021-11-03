@@ -10,19 +10,22 @@
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/owl.carousel.min.css">
     <link rel="stylesheet" href="public/css/flaticon.css">
-    <script src="public/js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="public/js/jquery.counterup.min.js"></script>   
-
-    <!--script type="text/javascript" src="public/js/jquery.mousewheel-3.0.4.pack.js"></script>
-    <script type="text/javascript" src="public/js/jquery.fancybox-1.3.4.pack.js"></script>
-    <script type="text/javascript" src="public/js/jquery.easing-1.3.pack.js"></script> 
-
-    <link rel="stylesheet" href="public/css/jquery.fancybox-1.3.4.css" type="text/css" media="screen"-->
+    <script type="text/javascript" src="public/js/jquery.min.js"></script>
 </head>
 
 <body>
-    <section class="position-relative marginb_section section_bannerHome section_bannerHome_02" id="seccion_banner_global">
+    <!-- ////   SECCION BOT AGREGADO   //// -->
+    <div class="chat-bot">
+        <ul>
+            <li class="bot">
+                <a href="#!"><img src="public/img/Bot.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <!-- ////*********************************//// -->
+
+    <section class="position-relative marginb_section section_bannerHome section_bannerHome_02"
+        id="seccion_banner_global">
         <video onloadedmetadata="this.muted=true" autoplay loop>
             <source src="public/img/video_dinet.mp4" type="video/mp4">
         </video>
@@ -35,7 +38,7 @@
                             <a href="index.html"><img class="" src="public/img/Logo_dinet.png" alt=""></a>
                         </div>
 
-                        <div class="codigo_mobil" id="navbarsExample08">
+                        <div class="codigo_mobil">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <div class="codigo_envio position-relative">
@@ -58,48 +61,43 @@
                                 <li class="nav-item">
                                     <a class="nav-link" aria-current="page" href="nosotros.html">Sobre nosotros</a>
                                 </li>
-                                <!--li class="nav-item">
-                                    <a class="nav-link" href="servicios.html">Servicios</a>
-                                </li-->
+                                <!-- ////  UPDATE  //// -->
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle position-relative" href="servicios.html" id="navbarDropdown"
-                                        role="button" >
-                                        Servicios
-                                        <span class="icon-drop position-absolute"><i
-                                                class="flaticon-descargar"></i></span>
-                                    </a>
-                                    <div class="dropdown-menu">
+                                    <div class="list-servicios-mobil">
+                                        <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown"
+                                            role="button">
+                                            Servicios
+                                        </a>
+                                        <span class="icon-drop"><i class="flaticon-descargar"></i></span>
+                                    </div>
+                                    <div id="menu-mobil" class="dropdown-menu menu-hover dis-none">
                                         <ul class="content-dropdown" aria-labelledby="navbarDropdown">
-                                            <li class="position-relative list-ser"><a class="dropdown-item" href="single-servicios.html"><img src="public/img/drop-camion.png" alt="">
-                                                Ultima milla</a>
+                                            <li class="position-relative list-ser"><a class="dropdown-item"
+                                                    href="single-servicios.html"><img src="public/img/drop-camion.png"
+                                                        alt="">
+                                                    Ultima milla</a>
                                             </li>
-                                            <li class="position-relative list-ser"><a class="dropdown-item" href="!#"><img src="public/img/drop-caja.png" alt="">Fulfillment</a></li>
-                                            <li class="position-relative list-ser"><a class="dropdown-item" href="!#"><img src="public/img/drop-moto.png" alt="">Express</a></li>
-                                            <li class="position-relative list-ser"><a class="dropdown-item" href="!#"><img src="public/img/drop-inversa.png" alt="">Logística inversa regular</a></li>
-                                            <li class="position-relative "><a class="dropdown-item" href="!#"><img src="public/img/drop-eseller.png" alt="">Eseller</a></li>
+                                            <li class="position-relative list-ser"><a class="dropdown-item"
+                                                    href="!#"><img src="public/img/drop-caja.png" alt="">Fulfillment</a>
+                                            </li>
+                                            <li class="position-relative list-ser"><a class="dropdown-item"
+                                                    href="!#"><img src="public/img/drop-moto.png" alt="">Express</a>
+                                            </li>
+                                            <li class="position-relative list-ser"><a class="dropdown-item"
+                                                    href="!#"><img src="public/img/drop-inversa.png" alt="">Logística
+                                                    inversa regular</a></li>
+                                            <li class="position-relative "><a class="dropdown-item" href="!#"><img
+                                                        src="public/img/drop-eseller.png" alt="">Eseller</a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <!--li class="nav-item dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b
-                                            class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </li-->
+                                <!-- ////  *********************  //// -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="blog.html">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Cotizaciones</a>
                                 </li>
-                                <!--li class="nav-item">
-                                    <a class="nav-link boton_buscar_header" href="#"><img src="public/img/header/rastreo.png" alt=""></a>
-                                </li-->
                                 <li class="nav-item code-send hiden">
                                     <div class="codigo_envio position-relative no-mobil">
                                         <input type="text" placeholder="Código de envío">
@@ -107,12 +105,12 @@
                                                 alt=""></span>
                                     </div>
                                 </li>
-                                <li class="nav-item boton b_boton">
-                                    <a class="nav-link text-white text-center" href="#">Acceso Clientes</a>
+                                <li class="nav-item boton acces-cliente">
+                                    <a class="nav-link text-white text-center b_boton" href="#">Acceso Clientes</a>
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
                 </nav>
             </header>
@@ -137,6 +135,7 @@
         </div>
     </section>
 
+    
     <section id="seccion_slider_soluciones" class="bottom_section">
 
         <div class="container">
@@ -233,7 +232,7 @@
 
     </section>
 
-    <section id="section_rastreo" class="bottom_section">
+    <section id="section_rastreo" class="bottom_section position-relative rastreo">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 img_cinta">
@@ -264,7 +263,7 @@
 
                 <div class="col-lg-6">
                     <div class="content_tutorial">
-                        
+
                         <img class="img_tutorial" src="public/img/img_tutorial.png" alt="">
                         <div class="caja_pregunta">
                             <p>¿Cómo sacar un turno para ir a la sucursal?</p>
@@ -324,13 +323,13 @@
                                 <p>Envíos realizados</p>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 datos">
-                                <img  src="public/img/moto.png" alt="">
-                                <b class="counter" >352</b>
+                                <img src="public/img/moto.png" alt="">
+                                <b class="counter">352</b>
                                 <p>Unidades ecommerce</p>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 datos">
                                 <img src="public/img/cajas.png" alt="">
-                                <b class="counter" >84</b>
+                                <b class="counter">84</b>
                                 <p>M2 de almacenes ecommerce</p>
                             </div>
                         </div>
@@ -343,25 +342,6 @@
                 </div>
             </div>
         </div>
-        <!--div class="container">
-            <div class="row">
-              <div class="col-md-4" >
-                <h1><span class="counter">2,523</span></h1>
-                <h3>Customers</h3>
-                <i class="fa fa-users"></i>
-              </div> 
-              <div class="col-md-4">
-                <h1><span class="counter">63,075</span></h1>
-                <h3>Total Web Pages</h3>
-                <i class="fa fa-desktop"></i>
-              </div>
-              <div class="col-md-4">
-                <h1><span class="counter">12,218</span></h1>
-                <h3>Cups Of Coffee</h3>
-                <i class="fa fa-coffee"></i>
-              </div>
-            </div>
-          </div-->
     </section>
 
     <section id="section_noticias" class="bottom_section">
@@ -484,9 +464,9 @@
                         <p><b>Chatbot whatssapp:</b> +51983440989</p>
                         <div class="redes">
                             <ul class="grid align-center">
-                                <li><a href="#!"><img src="public/img/facebook_1.png" alt=""></a></li>
-                                <li><a href="#!"><img src="public/img/instagram.png" alt=""></a></li>
-                                <li><a href="#!"><img src="public/img/youtube.png" alt=""></a></li>
+                                <li><a href="#!"><i class="flaticon-facebook"></i></a></li>
+                                <li><a href="#!"><i class="flaticon-instagram"></i></a></li>
+                                <li><a href="#!"><i class="flaticon-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -537,11 +517,12 @@
     </footer>
 
 
-
     <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="public/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="public/js/app.js"></script>
-    
+    <link rel="stylesheet" href="public/css/fancy.min.css" />
+    <script type="text/javascript" src="public/js/jquery.fancybox.min.js"></script>
+
 </body>
 
 </html>

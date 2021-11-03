@@ -12,14 +12,26 @@
                 display: flex;
                 padding-bottom: 10px;
                 font-size: 13px;
-                span{    
+                padding-left: 20px;
+                &.icon_cuadrado{
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width:10px;
+                        height: 10px;
+                        background: $color_secundary;
+                        top: 4px;
+                        left: 0;
+                    }
+                }
+                /*span{    
                     margin-top: 5px;
                     margin-right: 14px;
                     display: block;
                     width: 14px;
                     height: 10px;
                     background-color: $color_secundary;
-                }
+                }*/
             }
         }
     }
@@ -49,6 +61,7 @@
                 height: 40px;
                 border: 1.5px solid #ABABAB;
                 border-radius: 4px;
+                padding-left: 10px;
             }
             a{
                 color: $color_secundary;

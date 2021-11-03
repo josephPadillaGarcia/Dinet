@@ -656,6 +656,114 @@ header{
 }
 
 
+li.nav-item.boton a {
+    background: $color_secundary;
+    padding: 15px 30px;
+    border-radius: 50px;
+    width: 202px;
+}
+
+/*========================================*/
+/*
+    Section POLITICA - SE AGREGO
+*/
+
+#section-politica{
+    .content-politica{
+        .resaltar-politica{
+            color: $color_secundary;
+            font-size: 16px !important;
+        }
+    }
+}
+
+
+/*========================================*/
+/*
+    error 404 - SE AGREGO
+*/
+.section_error{
+    header{
+        nav{
+            .navbar-nav{
+                .nav-item{
+                    .codigo_envio{
+                        input{                                
+                            border: 2px solid $color_secundary !important;
+                            border-radius: 50px;
+                            padding: 15px 20px;
+                            font-size: 12px;
+                            color: #9F9F9F;
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#error-404 {
+    padding: 80px 0;
+    h3{
+        color: $color_secundary;
+        font-weight: bold;
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    p{
+        font-size: 16px !important;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .content_boton{
+        a{            
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    .img-error{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+/*========================================*/
+/*
+    CHAT - BOT
+*/
+
+.chat-bot {
+    position: fixed;
+    bottom: 150px;
+    right: 25px;
+    z-index: 5;
+    li {
+        &.bot{
+            background-color: $color_secundary;
+        }
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: #009D00;
+        margin-bottom: 20px;
+        border-radius: 50px;
+        overflow: hidden;
+        span {
+            i {
+                display: flex;
+                font-size: 30px;
+                color: white;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
 /*========================================*/
 /*
     Responsive
@@ -853,6 +961,26 @@ header{
             margin-bottom: 30px;
         }
     }
+
+    li.nav-item.boton a {
+        width: 100%;
+    }
+
+    
+    #error-404 {
+        padding: 80px 0;
+        h3, p{
+            text-align: center;
+        }
+        .content_boton{
+            a{            
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+
+
 }
 
 @media (max-width: 765px){
@@ -905,6 +1033,7 @@ header{
             }    
         }
     }
+
 }
 
 @media (max-width: 590px){
